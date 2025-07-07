@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <form action="/register" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <p>Gender: 
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male </label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female </label>
+
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others </label>
+        </p>
+        
+        <p>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        </p>
+
+        <p>
+        <label for="qual">Qualification:</label>
+        <input type="text" id="qual" name="qual">
+        </p>
+
+        <p>
+        <label for="str">Stream:</label>
+        <select id="str" name="stream" >
+            <option value="Electrical">Electrical</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Data Science and applications">Data Science and applications</option>
+            <option value="Civil">Civil</option>
+            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+            <option value="Chemical">Chemical</option>
+            <option value="Aerospace">Aerospace</option></select>
+        </p>
+
+        <p>
+        <label for="add">Address:</label>
+        <textarea name="add" id="add"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
